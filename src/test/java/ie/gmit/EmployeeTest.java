@@ -20,25 +20,25 @@ public class EmployeeTest {
     @Test
     void testNameConstructor(){
         Employee myEmployee = new Employee("mr","caleb","12345678","123456789","full",23);
-        assertEquals("mr",myEmployee.getName());
+        assertEquals("caleb",myEmployee.getName());
 
     }
     @Test
     void testPPSConstructor(){
         Employee myEmployee = new Employee("mr","caleb","12345678","123456789","full",23);
-        assertEquals("mr",myEmployee.getPPS());
+        assertEquals("12345678",myEmployee.getPPS());
 
     }
     @Test
     void testNumConstructor(){
         Employee myEmployee = new Employee("mr","caleb","12345678","123456789","full",23);
-        assertEquals("mr",myEmployee.getNumber());
+        assertEquals("123456789",myEmployee.getNumber());
 
     }
     @Test
     void testETConstructor(){
         Employee myEmployee = new Employee("mr","caleb","12345678","123456789","full",23);
-        assertEquals("mr",myEmployee.getEmploymentType());
+        assertEquals("full",myEmployee.getEmploymentType());
 
     }
     @Test

@@ -14,17 +14,17 @@ public class Employee {
         }
         else
             throw new IllegalArgumentException("Invalid Title");
-        if(name.length()>3 && name.length()< 25){
+        if(name.length()>=3 && name.length()<= 25){
             this.name = name;
         }
         else
             throw new IllegalArgumentException("Invalid name");
-        if(PPS.length()>8&&PPS.length()<8){
+        if(PPS.length()==8){
             this.PPS = PPS;
         }
         else
             throw new IllegalArgumentException("Invalid PPS");
-        if(number.length()>9 && number.length()<9){
+        if(number.length()==9 ){
             this.number =number;
         }
         else
