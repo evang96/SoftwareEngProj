@@ -31,13 +31,13 @@ public class Employee {
             throw new IllegalArgumentException("Invalid number");
 
         if(employmentType.equals("full")||employmentType.equals("part")||employmentType.equals("contract")){
-            this.employmentType = title;
+            this.employmentType = employmentType;
         }
         else
             throw new IllegalArgumentException("Invalid number");
 
         if(age >18 ){
-            this.name = name;
+            this.age = age;
         }
         else
             throw new IllegalArgumentException("Invalid age, too young to work at company");
@@ -59,5 +59,13 @@ public class Employee {
 
     public String getNumber() {
         return number;
+    }
+
+    public String getEmploymentType() {
+        return employmentType;
+    }
+
+    public int getAge() {
+        return age;
     }
 }

@@ -30,15 +30,21 @@ public class EmployeeTest {
 
     }
     @Test
-    void testNumberConstructor(){
+    void testNumConstructor(){
         Employee myEmployee = new Employee("mr","caleb","12345678","123456789","full",23);
-        assertEquals("mr",myEmployee.getTitle());
+        assertEquals("mr",myEmployee.getNumber());
 
     }
     @Test
-    void testNumberConstructor(){
+    void testETConstructor(){
         Employee myEmployee = new Employee("mr","caleb","12345678","123456789","full",23);
-        assertEquals(23,myEmployee.getTitle());
+        assertEquals("mr",myEmployee.getEmploymentType());
+
+    }
+    @Test
+    void testAgeConstructor(){
+        Employee myEmployee = new Employee("mr","caleb","12345678","123456789","full",23);
+        assertEquals(23,myEmployee.getAge());
 
     }
 
