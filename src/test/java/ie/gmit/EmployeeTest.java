@@ -12,6 +12,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class EmployeeTest {
 
@@ -26,33 +27,39 @@ public class EmployeeTest {
 
     }
     @Test
+    void testTitleConstructor(){
+        assertThrows(IllegalArgumentException.class, () -> new
+                Employee("","caleb","12345678","123456789","full",23));
+
+    }
+    @Test
     void testNameConstructor(){
-        Employee myEmployee = new Employee("mr","caleb","12345678","123456789","full",23);
-        assertEquals("caleb",myEmployee.getName());
+        assertThrows(IllegalArgumentException.class, () -> new
+                Employee("mr","","12345678","123456789","full",23));
 
     }
     @Test
     void testPPSConstructor(){
-        Employee myEmployee = new Employee("mr","caleb","12345678","123456789","full",23);
-        assertEquals("12345678",myEmployee.getPPS());
+        assertThrows(IllegalArgumentException.class, () -> new
+                Employee("mr","caleb","1234567","123456789","full",23));
 
     }
     @Test
     void testNumConstructor(){
-        Employee myEmployee = new Employee("mr","caleb","12345678","123456789","full",23);
-        assertEquals("123456789",myEmployee.getNumber());
+        assertThrows(IllegalArgumentException.class, () -> new
+                Employee("mr","caleb","12345678","12345678","full",23));
 
     }
     @Test
     void testETConstructor(){
-        Employee myEmployee = new Employee("mr","caleb","12345678","123456789","full",23);
-        assertEquals("full",myEmployee.getEmploymentType());
+        assertThrows(IllegalArgumentException.class, () -> new
+                Employee("mr","caleb","12345678","123456789","unemployed",23));
 
     }
     @Test
     void testAgeConstructor(){
-        Employee myEmployee = new Employee("mr","caleb","12345678","123456789","full",23);
-        assertEquals(23,myEmployee.getAge());
+        assertThrows(IllegalArgumentException.class, () -> new
+                Employee("mr","caleb","12345678","123456789","full",15));
 
     }
 

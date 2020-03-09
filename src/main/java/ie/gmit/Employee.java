@@ -19,6 +19,7 @@ public class Employee {
     private String employmentType;
     private int age;
 
+
     public Employee(String title, String name, String PPS, String number, String employmentType, int age) {
         if(title.equals("mr")||title.equals("mrs")||title.equals("ms")){
             this.title = title;
@@ -54,8 +55,6 @@ public class Employee {
             throw new IllegalArgumentException("Invalid age, too young to work at company");
 
     }
-
-
     public String getTitle() {
         return title;
     }
@@ -79,4 +78,7 @@ public class Employee {
     public int getAge() {
         return age;
     }
+
+
+
 }
