@@ -1,3 +1,11 @@
+/*
+Name: Caleb Fox
+Date: 09/03/2020
+G00327455
+
+Employee Test class for payroll system
+
+*/
 package ie.gmit;
 
 import org.junit.jupiter.api.DisplayName;

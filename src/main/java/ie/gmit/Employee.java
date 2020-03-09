@@ -1,3 +1,14 @@
+/*
+Name: Caleb Fox
+Date: 09/03/2020
+G00327455
+
+Employee class for payroll system
+
+Code will validate entries for title, name etc.
+
+*/
+
 package ie.gmit;
 
 public class Employee {
@@ -34,7 +45,7 @@ public class Employee {
             this.employmentType = employmentType;
         }
         else
-            throw new IllegalArgumentException("Invalid number");
+            throw new IllegalArgumentException("Invalid Employment type");
 
         if(age >18 ){
             this.age = age;
