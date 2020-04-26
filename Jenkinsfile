@@ -1,5 +1,6 @@
 //Jenkins pipeline
 //Evan Garvey
+//Group Project
 
 pipeline {
     agent any
