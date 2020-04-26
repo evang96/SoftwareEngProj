@@ -1,14 +1,3 @@
-/*
-Name: Caleb Fox
-Date: 09/03/2020
-G00327455
-
-Employee class for payroll system
-
-Code will validate entries for title, name etc.
-
-*/
-
 package ie.gmit;
 
 public class Employee {
